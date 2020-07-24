@@ -72,6 +72,16 @@ navbar {
     color: rgb(71, 71, 71);
 }
 
+.social {
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    border: 1px solid gray;
+    border-radius: 0 4px 4px 0;
+    background: #F6E4CE;
+}
+
 .main-icon {
     font-size: 100px;
     width: 50px;
@@ -84,8 +94,7 @@ navbar {
 }
 
 .main-icon:hover {
-    color:white;
-    border: 1px solid white;
+    border: 1px solid rgb(71, 71, 71);
     border-radius: 32px;
 }
 
@@ -107,6 +116,8 @@ navbar {
 section {
     text-align: center;
 }
+
+
 
 .project-card {
     display: flex;
@@ -137,6 +148,10 @@ section {
 }
 
 @media(max-width:900px) {
+    .about {
+        margin: 10%;
+    }
+
     .project-card {
         flex-direction: column;
         min-height: 300px;
@@ -160,6 +175,12 @@ section {
 
     .navbarElems p {
         padding: 5%;
+    }
+
+    .social {
+        flex-direction: row;
+        width: 100%;
+        top: 91%;
     }
 }
 
@@ -194,9 +215,5 @@ section {
     border: 1px solid lightgray;
     box-shadow: 10px 10px 10px 1px lightgray;
     border-radius: 10px;
-}
-
-.skills img:nth-child(odd) {
-    /* border: 2px solid #AB7551; */
 }
 
