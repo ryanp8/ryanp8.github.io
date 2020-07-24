@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ryan Poon | Portfolio</title>
+</head>
+<body>
+    <navbar>
+        <div class="navbarElems">
+            <!-- <p><a href="#about">About Me</a></p> -->
+            <div class="left">
+                <p><a href="#projectsLoc">Projects</a></p>
+                <p><a href="#skillsLoc">Skills</a></p>
+            </div>
+            <div class="right">
+                <p id="ui-mode">&#127774</p>
+            </div>
+            <!-- <p><a href="#resume">Resume</a></p> -->
+        </div>
+    </navbar>
+    <div class="title">
+        <div class="title-content">
+            <div class="name"></div>
+            <div class="sub-message"></div>
+        </div>
+        <div class="social">
+            <span><a href="https://www.facebook.com/ryan.poon.9400/" class="fa fa-facebook fa-2x main-icon" target="_blank"></a></span>
+            <span><a href="https://www.github.com/ryanasc20/" class="fa fa-github fa-2x main-icon" target="_blank"></a></span>
+            <span><a href="https://www.linkedin.com/in/ryan-poon-23b4271b3/" class="fa fa-linkedin fa-2x main-icon" target="_blank"></a></span>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    
+    <div class="content">
+        <section class="about">
+            <p class="section-head">About Me</p>
+            <p class="content">I am a rising Junior currently attending Stuyvesant High School. 
+                I have always loved problem-solving, which goes hand in hand with programming.
+            </p>
+        </section>
+        <div id="projectsLoc"></div>
+        <br>
+        <br>
+        <hr>
+        <p class="section-head">Projects</p>
+        <section class="section" id="projects">
+            <div class="project-card">
+                <img src="imgs/raycasting.PNG">
+                <div class="project-text">
+                    <p class="project-head">Raycasting in p5</p>
+                    <br>
+                    <div class="tech-used">
+                        <p>p5.js</p>
+                        <p>HTML</p>
+                    </div>
+                    <br>
+                    <p>Project uses the p5 library in Javascript to visualize raycasting and shadowing.</p>
+                    
+                    <div class="project-sources">
+                        <div class="project-btn" id="code-source-btn">
+                            <a href="https://www.github.com/ryanasc20/raycasting" target="_blank"><span class="fa fa-github"></span> Code</a>
+                        </div>
+                        <div class="project-btn" id="code-demo-btn">
+                            <a href="https://ryanasc20.github.io/raycasting/" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">  
+                <img src="imgs/surreal.PNG">
+                <div class="project-text">
+                    <p class="project-head">Surreal: A Quick Source for Toilet Paper Prices</p>
+                    <br>
+                    <div class="tech-used">
+                        <p>Python</p>
+                        <p>BeautifulSoup4</p>
+                        <p>Requests</p>
+                        <p>CGI</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                    </div>
+                    <br>
+                    <p>Python-powered website that uses BeautifulSoup to scrape pricing data from stors, including Walmart, BJ's, and CVS. 
+                       Users can sort through products by price, name, and availability. Users can also create their own accounts that store their cart's items.
+                    </p>
+                    <div class="project-sources">
+                        <div class="project-btn" id="code-source-btn">
+                            <a href="#"><span class="fa fa-github"></span> Code</a>
+                        </div>
+                        <div class="project-btn" id="code-demo-btn">
+                            <a href="http://moe.stuy.edu/~rpoon20/surreal" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="imgs/astar.png">
+                <div class="project-text">
+                    <p class="project-head">A* Implementation in Pygame</p>
+                    <br>
+                    <div class="tech-used">
+                        <p>Python</p>
+                        <p>Pygame</p>
+                    </div>
+                    <br>
+                    <p>Uses the pygame library in Python to visualize the A* pathfinding algorithm.</p>
+                    <div class="project-sources">
+                        <div class="project-btn" id="code-source-btn">
+                            <a href="#"><span class="fa fa-github"></span> Code</a>
+                        </div>
+                        <div class="project-btn" id="code-demo-btn">
+                            Demo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div id="skillsLoc"></div>
+        <section class="skills">
+            <p class="section-head" id="skills">Skills</p>
+            <img src="imgs/pythonLogo.png">
+            <img src="imgs/jsLogo.png">
+            <img src="imgs/p5Logo.png">
+            <img src="imgs/htmlLogo.png">
+            <img src="imgs/cssLogo.jpg">
+
+        </section>
+
+    </div>
+
+
+    
+    <script src="lib/sketch.js"></script>
+</body>
+</html>
