@@ -82,8 +82,11 @@ navbar {
     background: #F6E4CE;
 }
 
+.fa .fa-2x{
+    margin: none;
+}
+
 .main-icon {
-    font-size: 100px;
     width: 50px;
     text-align: center;
     text-decoration: none;
@@ -97,7 +100,6 @@ navbar {
     /* border: 2px solid rgb(71, 71, 71); */
     color: white;
     border: 2px solid white;
-
     border-radius: 32px;
 }
 
@@ -132,7 +134,11 @@ section {
     border-radius: 8px;
     background: rgb(242, 242, 242);
     box-shadow: 10px 10px 10px 1px lightgray;
-    align-items: center;
+    /* align-items: center; */
+}
+
+.card-right {
+    flex-direction: row-reverse;
 }
 
 .project-head {
@@ -190,6 +196,12 @@ section {
     }
 }
 
+@media(min-width:1700px) {
+    .project-card img{
+        max-height: none;
+    }
+}
+
 .tech-used p {
     color: gray;
     display: inline;
@@ -207,11 +219,11 @@ section {
 }
 
 .code-source-btn {
-    background: #22c94f;
+    background: #A1FFBD;
 }
 
 .code-demo-btn {
-    background: #AB7551;
+    background: #A1FFBD;
 }
 
 .skills img {
