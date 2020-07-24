@@ -197,6 +197,9 @@ section {
 }
 
 @media(min-width:1700px) {
+    .project-card {
+        margin: 3% 25%;
+    }
     .project-card img{
         max-height: none;
     }
