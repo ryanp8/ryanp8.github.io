@@ -206,11 +206,11 @@ section {
     box-shadow: 10px 10px 10px 1px lightgray;
 }
 
-#code-source-btn {
+.code-source-btn {
     background: #22c94f;
 }
 
-#code-demo-btn {
+.code-demo-btn {
     background: #AB7551;
 }
 
