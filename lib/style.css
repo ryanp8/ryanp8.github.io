@@ -155,8 +155,9 @@ section {
 }
 
 .project-card img {
+    border-radius: 30px;
     width: 40%;
-    padding: 0 2%;
+    margin: 0 2%;
     max-height: 200px;
 }
 
@@ -172,9 +173,10 @@ section {
     }
 
     .project-card img {
-        margin: 10% 0;
+        /* margin: 10% 0; */
         width: 70%;
-        max-height: none;
+        max-height: none; 
+        margin: 2% auto;
     }
 
     .left {
