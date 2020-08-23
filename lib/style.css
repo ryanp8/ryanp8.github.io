@@ -16,7 +16,7 @@ a, a:visited {
 }
 
 
-navbar {
+nav {
     display:block;
     width: 100%;
     padding: 15px;
@@ -62,14 +62,16 @@ navbar {
 
 .title {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     align-content: center;
     /* background-image: url("/imgs/titleImg.jpg"); */
-    box-shadow: 0px 0px 10px 10px gray;
+    /* box-shadow: 0px 0px 10px 10px gray; */
     color: rgb(71, 71, 71);
+    /* border: 1px solid black; */
+    margin: 0;
 }
 
 .social {
@@ -107,7 +109,7 @@ navbar {
     font-size: 48px;
 }
 
-.subMessage {
+.sub-message {
     font-size: 28px;;
 }
 
@@ -123,7 +125,7 @@ section {
 }
 
 .about {
-    margin: 0 18%;
+    margin: 10 18%;
 }
 
 .project-card {
@@ -216,16 +218,13 @@ section {
     font-style: bold;
     font-size: 18px;    
     box-shadow: 10px 10px 10px 1px lightgray;
-}
-
-.code-source-btn {
     background: #A1FFBD;
+    transition: background 200ms;
 }
 
-.code-demo-btn {
-    background: #A1FFBD;
+.project-btn:hover {
+    background: #75c88e;
 }
-
 .skills img {
     max-height: 60px;
     padding: 3%;

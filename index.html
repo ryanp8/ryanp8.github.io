@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style, Fonts, Icons -->
     <link rel="stylesheet" href="lib/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Script -->
+    <script src="lib/script.js" defer></script>
+    <script src="lib/theme.js" defer></script>
+
     <title>Ryan Poon | Portfolio</title>
 </head>
 <body>
-    <navbar>
+    <nav>
         <div class="navbarElems">
             <!-- <p><a href="#about">About Me</a></p> -->
             <div class="left">
@@ -23,11 +30,12 @@
             </div>
             <!-- <p><a href="#resume">Resume</a></p> -->
         </div>
-    </navbar>
+    </nav>
+
     <div class="title">
         <div class="title-content">
             <div class="name"></div>
-            <div class="sub-message"></div>
+            <div class="sub-message">Web-developer</div>
         </div>
     </div>
 
@@ -38,18 +46,19 @@
         <span><a href="mailto:rypoon18@gmail.com" class="fa fa-envelope fa-2x main-icon" target="_blank"></a></span>
     </div>
 
+    <!-- <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <hr>
-    <br>
+    <br> -->
+    <hr> 
+    <br> 
     
     <div class="content">
         <section class="about">
             <p class="section-head">About Me</p>
-            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aperiam, saepe vitae culpa corporis alias voluptatem quaerat totam quia animi necessitatibus consequatur minima odio reiciendis reprehenderit nemo nihil optio, nobis natus facere pariatur doloribus labore. Fugit nam laborum, ad enim dolore mollitia inventore! Iure earum placeat quia porro aliquid quidem nam qui. Atque dignissimos aspernatur quo ipsum ipsam unde, iste veritatis officiis ad numquam soluta error similique minima, adipisci quae aliquid quam aliquam culpa harum corporis cupiditate quasi? Tempore optio natus perferendis, illum porro hic esse numquam minima autem repellat excepturi vel atque temporibus aliquam repudiandae et? Necessitatibus, quia eos.
+            <p class="content">I am currently a rising Junior at Stuyvesant High School. I an aspiring full-stack developer with experience in HTML,
+            CSS, JavaScript, and Python.
             </p>
         </section>
         <div id="projectsLoc"></div>
@@ -58,6 +67,35 @@
         <hr>
         <p class="section-head" id="project-head">Projects</p>
         <section class="section" id="projects">
+            <div class="project-card">
+                <img src="imgs/ARI Exchange.png">
+                <div class="project-text">
+                    <p class="project-head">ARI-Exchange</p>
+                    <br>
+                    <div class="tech-used">
+                        <p>JavaScript</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Firebase</p>
+                    </div>
+                    <br>
+                    <p>My Demo Day project that I worked on with Advaith Hari and Ibrahim Kabia. It is an ecommerce site with the
+                        buyer's
+                        interests in mind rather than sellers. Instead of following the traditional model where sellers post their
+                        items,
+                        ARI-Exchange allows buyers to post requests for items they are looking for at a desired price. Sellers can
+                        then propose
+                        offers in each request's comment section.</p>
+                    <div class="project-sources">
+                        <div class="project-btn code-source-btn">
+                            <a href="https://github.com/RyanASC20/Exchange-Ari"><span class="fa fa-github"></span>Code</a>
+                        </div>
+                        <div class="project-btn code-demo-btn">
+                            <a href="https://ryanasc20.github.io/Exchange-Ari/" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="project-card">
                 <img src="imgs/raycasting.PNG">
                 <div class="project-text">
@@ -107,27 +145,6 @@
                     </div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="imgs/astar.png">
-                <div class="project-text">
-                    <p class="project-head">A* Implementation in Pygame</p>
-                    <br>
-                    <div class="tech-used">
-                        <p>Python</p>
-                        <p>Pygame</p>
-                    </div>
-                    <br>
-                    <p>Uses the pygame library in Python to visualize the A* pathfinding algorithm.</p>
-                    <div class="project-sources">
-                        <div class="project-btn code-source-btn">
-                            <a href="#"><span class="fa fa-github"></span> Code</a>
-                        </div>
-                        <div class="project-btn code-demo-btn">
-                            <a href="#">Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <hr>
         <div id="skillsLoc"></div>
@@ -154,6 +171,5 @@
 
 
     
-    <script src="lib/sketch.js"></script>
 </body>
 </html>
