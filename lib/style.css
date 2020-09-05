@@ -142,12 +142,28 @@ i:hover {
 
 #resume-modal {
     display: none;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     top: 50%;
     left: 50%;
     margin: auto;
     transform: translate(-50%, -50%);
+}
+
+#resume-modal iframe {
+    width: 40%;
+    height: 100%;
+}
+
+.c21 {
+    padding: 0;
+}
+
+@media(max-width:1200px) {
+    #resume-modal iframe {
+        width: 95%; 
+    }
 }
 
 @media(max-width:790px) {
