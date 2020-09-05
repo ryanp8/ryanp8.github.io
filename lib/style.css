@@ -45,7 +45,7 @@ a, a:visited {
 
 .social {
     position: absolute;
-    bottom: 35%;
+    bottom: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 6.5em;
@@ -189,7 +189,7 @@ i:hover {
     .social {
         flex-direction: column;
         align-items: center;
-        top: 70%;
+        bottom: 0;
     }
 
     i {
