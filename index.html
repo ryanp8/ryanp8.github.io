@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!--Meta-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Fonts/icons -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="lib/style.css">
-    <link rel="stylesheet" href="lib/projects.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- Style -->
+    <link rel="stylesheet" href="lib/min/css/style.min.css">
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js" defer></script>
-    <script src="lib/sketch.js" defer></script>
-    <script src="lib/name.js" defer></script>
-    <script src="lib/resumeModal.js" defer></script>
-    
-
+    <!-- <script src="lib/min/js/sketch.min.js" defer></script>
+    <script src="lib/min/js/name.min.js" defer></script>
+    <script src="lib/min/js/resumeModal.min.js" defer></script> -->
+    <script type="module" src="lib/js/script.js" defer></script>
+    <script src="lib/min/js/sketch.min.js" defer></script>
     <title>Ryan Poon | Portfolio</title>
 </head>
 <body>
@@ -30,43 +26,40 @@
         <div id="canvas"></div>
         <section id="title">
             <p id="name" class="heading">
-
             </p>
-            <p id="position" class="content">
+            <p id="position">
                 Full Stack Developer
             </p>
-            <div class="content" id="about">
+            <div id="about">
                 Welcome to my portfolio!<br><br>
-                I am currently a rising Junior at Stuyvesant High School. I am an aspiring full-stack developer with experience in
+                I am currently a rising Junior at Stuyvesant High School. I am an aspiring full-stack developer with
+                experience in
                 HTML, CSS, JavaScript, and Python.
             </div>
         </section>
-
         <div class="social">
             <a href="https://github.com/RyanASC20" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ryan-poon-23b4271b3/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/ryan-poon-23b4271b3/" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
             <a href="https://www.facebook.com/ryan.poon.9400/" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="mailto:rypoon18@gmail.com"><i class="fas fa-envelope"></i></a>
             <i class="fas fa-file-alt" id="resume-modal-btn"></i>
         </div>
-
         <div id="project-arrow-container">
-            <a href="#projects"><i class="fas fa-arrow-down animate__animated animate__bounce animate__infinite infinite"></i></a>
+            <a href="#projects"><i
+                    class="fas fa-arrow-down animate__animated animate__bounce animate__infinite infinite"></i></a>
         </div>
-        
-
         <div class="modal modal-mask" id="resume-modal">
             <iframe id="resume"
                 src="https://docs.google.com/document/d/e/2PACX-1vTWRv4drqSJ9ctIrRZQ7x5PQykcpD5jLzV5hzVwSfTzsnLySCO7Rj2Ygbiv0pGsINVxyfObbNGQm0hT/pub?embedded=true">
             </iframe>
             <i class="fas fa-times" id="modal-close"></i>
         </div>
-        
         <section id="projects">
             <div class="heading-container">
-                <p id="projects-heading" class="heading section-heading"><span class="heading-first-word">My</span> Projects</p>
-             </div>
-            <!-- <i class="fas fa-times close-btn"></i> -->
+                <p id="projects-heading" class="heading section-heading"><span class="heading-first-word">My</span>
+                    Projects</p>
+            </div>
             <div class="all-projects content">
                 <div class="project-card">
                     <img src="assets/imgs/ari-Exchange.png">
@@ -80,19 +73,12 @@
                             <p>Firebase</p>
                         </div>
                         <br>
-                        <p>My All Star Code Demo Day project that I worked on with Advaith Hari and Ibrahim Kabia. It is an ecommerce site
-                            with the
-                            buyer's
-                            interests in mind rather than sellers. Instead of following the traditional model where sellers post
-                            their
-                            items,
-                            ARI-Exchange allows buyers to post requests for items they are looking for at a desired price.
-                            Sellers can
-                            then propose
-                            offers in each request's comment section.</p>
+                        <p>My All Star Code Demo Day project that I worked on with Advaith Hari and Ibrahim Kabia. It is
+                            an ecommerce site with the buyer's interests in mind rather than sellers. Instead of following the traditional model where sellers post their items, ARI-Exchange allows buyers to post requests for items they are looking for at a desired price. Sellers can then propose offers in each request's comment section.</p>
                         <div class="project-sources">
                             <div class="project-btn code-source-btn">
-                                <a href="https://github.com/RyanASC20/Exchange-Ari"><span class="fab fa-github"></span>Code</a>
+                                <a href="https://github.com/RyanASC20/Exchange-Ari" target="_blank"><span
+                                        class="fas fa-code"></span>Code</a>
                             </div>
                             <div class="project-btn code-demo-btn">
                                 <a href="https://ryanasc20.github.io/Exchange-Ari/" target="_blank">Demo</a>
@@ -111,12 +97,10 @@
                         </div>
                         <br>
                         <p>Project uses the p5 library in Javascript to visualize raycasting and shadowing.</p>
-        
                         <div class="project-sources">
                             <div class="project-btn code-source-btn">
                                 <a href="https://www.github.com/ryanasc20/raycasting" target="_blank"><span
-                                        class="fab fa-github"></span>
-                                    Code</a>
+                                        class="fas fa-code"></span>Code</a>
                             </div>
                             <div class="project-btn code-demo-btn">
                                 <a href="https://ryanasc20.github.io/raycasting/" target="_blank">Demo</a>
@@ -127,7 +111,8 @@
                 <div class="project-card">
                     <img src="assets/imgs/surreal.PNG">
                     <div class="project-text">
-                        <p class="project-head"><span class="heading-first-word">Surreal</span>: A Quick Source for Toilet Paper Prices</p>
+                        <p class="project-head"><span class="heading-first-word">Surreal</span>: A Quick Source for
+                            Toilet Paper Prices</p>
                         <br>
                         <div class="tech-used">
                             <p>Python</p>
@@ -138,17 +123,12 @@
                             <p>CSS</p>
                         </div>
                         <br>
-                        <p>Python-powered website that uses BeautifulSoup to scrape pricing data from stors, including Walmart,
-                            BJ's,
-                            and CVS.
-                            Users can sort through products by price, name, and availability. Users can also create their own
-                            accounts
-                            that store their cart's items.
+                        <p>Python-powered website that uses BeautifulSoup to scrape pricing data from stors, including Walmart, BJ's, and CVS.  Users can sort through products by price, name, and availability. Users can also create their own accounts that store their cart's items.
                         </p>
                         <div class="project-sources">
-                            <div class="project-btn code-source-btn">
-                                <a href="#"><span class="fab fa-github"></span> Code</a>
-                            </div>
+                            <!-- <div class="project-btn code-source-btn">
+                                <a href="#"><span class="fab fa-code"></span> Code</a>
+                            </div> -->
                             <div class="project-btn code-demo-btn">
                                 <a href="http://moe.stuy.edu/~rpoon20/www/surreal/home.py" target="_blank">Demo</a>
                             </div>
@@ -158,6 +138,5 @@
             </div>
         </section>
     </main>
-
 </body>
 </html>
