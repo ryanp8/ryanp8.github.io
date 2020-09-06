@@ -7,7 +7,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 
 /* Track */
@@ -53,7 +53,8 @@ a, a:visited {
     justify-content: space-evenly;
 }
 
-i {
+i { 
+    color: white;
     font-size: 2em;
     padding: 0.5em;
     border: 1px solid transparent;
@@ -63,6 +64,21 @@ i {
 i:hover {
     cursor: pointer;
     border: 1px solid aquamarine;
+}
+
+#project-arrow-container {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+.fa-arrow-down {
+    color: aquamarine;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
 }
 
 .content, .heading {
@@ -156,9 +172,6 @@ i:hover {
     height: 100%;
 }
 
-.c21 {
-    padding: 0;
-}
 
 @media(max-width:1200px) {
     #resume-modal iframe {
@@ -194,5 +207,9 @@ i:hover {
 
     i {
         font-size: 1.5em;
+    }
+
+    #project-arrow-container {
+        top: 90%;
     }
 }
