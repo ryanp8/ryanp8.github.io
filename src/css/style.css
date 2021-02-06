@@ -194,7 +194,8 @@ i:hover {
     width: 60%;
     padding: 2%;
     border-bottom: 1px solid rgb(103, 99, 122);
-    margin: 0.8em 0;
+    /* padding: 1em 0; */
+    margin: 1em 0;
 }
 
 .card-right {
@@ -220,13 +221,23 @@ i:hover {
     width: 40%;
     margin: 0 2%;
     max-height: 200px;
+    width: 400px;
 }
 
+/* .img-container {
+    width: 1000px;
+} */
 
-.tech-used p {
+
+.tech-used p, .skills-table {
     color: rgb(0, 179, 255);
     display: inline;
     padding: 0 2%;
+}
+
+.skills-table td {
+    font-size: 1em;
+    padding: 1em;
 }
 
 .project-btn {
@@ -243,6 +254,12 @@ i:hover {
     background: aquamarine;
 }
 
+.skills-content {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
 
 @media(max-width:900px) {
     .project-card {
@@ -310,5 +327,9 @@ i:hover {
 
     #project-arrow-container {
         top: 90%;
+    }
+
+    .skills-table {
+        font-size: 0.7em;
     }
 }

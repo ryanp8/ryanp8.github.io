@@ -86,7 +86,7 @@ let shootingStar = () => {
 
 function setup() {
 
-    numStars = (windowWidth * windowHeight) / 16000;
+    numStars = (windowWidth * windowHeight) / 25000;
     staticStars = [];
     shootingStars = [];
 

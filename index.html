@@ -1,188 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!--Meta-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ryan Poon's Developer Portfolio. High school student, software developer, UX/UI designer. Experience in Python, JavaScript, HTML, CSS.">
-    <meta name="author", content="Ryan Poon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ryan Poon's Developer Portfolio. High school student, software developer, UX/UI designer. Experience in Python, JavaScript, HTML, CSS."
+    />
+    <meta name="author" , content="Ryan Poon" />
     <!-- Fonts/icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
     <!-- Style -->
-    <link rel="stylesheet" href="lib/css/style.min.css">
+    <link rel="stylesheet" href="src/css/style.min.css" />
     <!-- Animation -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <!-- Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"
+      defer
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+      defer
+    ></script>
     <!-- JS -->
-    <script type="module" src="lib/js/script.min.js" defer></script>
-    <script src="lib/js/sketch.min.js" defer></script>
+    <script type="module" src="src/js/script.min.js" defer></script>
+    <script src="src/js/sketch.min.js" defer></script>
     <title>Ryan Poon | Developer Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div id="canvas"></div>
-        <section id="title">
-            <p id="name" class="heading">
-            </p>
-            <p id="position">
-                Developer and Student🚀
-            </p>
-            <div id="about">
-                Welcome to my portfolio!<br><br>
-                I am currently a rising Junior at Stuyvesant High School. I am an aspiring full-stack developer with
-                experience in HTML, CSS, JavaScript, and Python.
-            </div>
-        </section>
-        <div class="social">
-            <a href="https://github.com/RyanASC20" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ryan-poon-23b4271b3/" target="_blank"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.facebook.com/ryan.poon.9400/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="mailto:rypoon18@gmail.com"><i class="fas fa-envelope"></i></a>
-            <i class="fas fa-file-alt" id="resume-modal-btn"></i>
+      <div id="canvas"></div>
+      <section id="title">
+        <p id="name" class="heading"></p>
+        <p id="position">Developer and Student🚀</p>
+        <div id="about">
+          Welcome to my portfolio!<br /><br />
+          I am currently a rising Junior at Stuyvesant High School. I am an
+          aspiring full-stack developer with experience in HTML, CSS,
+          JavaScript, and Python.
         </div>
-        <div id="project-arrow-container">
-            <a href="#projects"><i
-                    class="fas fa-arrow-down animate__animated animate__bounce animate__infinite infinite"></i></a>
+      </section>
+      <div class="social">
+        <a href="https://github.com/RyanASC20" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ryan-poon-23b4271b3/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.facebook.com/ryan.poon.9400/" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="mailto:rypoon18@gmail.com"><i class="fas fa-envelope"></i></a>
+        <i class="fas fa-file-alt" id="resume-modal-btn"></i>
+      </div>
+      <div id="project-arrow-container">
+        <a href="#projects"
+          ><i
+            class="fas fa-arrow-down animate__animated animate__bounce animate__infinite infinite"
+          ></i
+        ></a>
+      </div>
+      <div class="modal modal-mask" id="resume-modal">
+        <iframe
+          id="resume"
+          src="https://docs.google.com/document/d/e/2PACX-1vTWRv4drqSJ9ctIrRZQ7x5PQykcpD5jLzV5hzVwSfTzsnLySCO7Rj2Ygbiv0pGsINVxyfObbNGQm0hT/pub?embedded=true"
+        >
+        </iframe>
+        <i class="fas fa-times" id="modal-close"></i>
+      </div>
+      <section id="skills">
+        <div class="heading-container">
+          <p id="projects-heading" class="heading section-heading">
+            <span class="heading-first-word">My</span> Skills
+          </p>
         </div>
-        <div class="modal modal-mask" id="resume-modal">
-            <iframe id="resume"
-                src="https://docs.google.com/document/d/e/2PACX-1vTWRv4drqSJ9ctIrRZQ7x5PQykcpD5jLzV5hzVwSfTzsnLySCO7Rj2Ygbiv0pGsINVxyfObbNGQm0hT/pub?embedded=true">
-            </iframe>
-            <i class="fas fa-times" id="modal-close"></i>
+        <div class="content skills-content">
+          <table class="content skills-table">
+            <tr>
+              <td>Javascript</td>
+              <td>P5.js</td>
+              <td>React</td>
+            </tr>
+            <tr>
+              <td>Next.js</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+            <tr>
+              <td>SCSS</td>
+              <td>Python</td>
+              <td>Java</td>
+            </tr>
+            <tr>
+              <td>Firebase</td>
+              <td>Github</td>
+            </tr>
+          </table>
         </div>
-        <section id="projects">
-            <div class="heading-container">
-                <p id="projects-heading" class="heading section-heading"><span class="heading-first-word">My</span>
-                    Projects</p>
+      </section>
+      <section id="projects">
+        <div class="heading-container">
+          <p id="projects-heading" class="heading section-heading">
+            <span class="heading-first-word">My</span> Projects
+          </p>
+        </div>
+        <div class="all-projects content">
+          <div class="project-card">
+            <img src="assets/imgs/covidmapdata.PNG" />
+            <div class="project-text">
+              <p class="project-head">
+                <span class="heading-first-word">Covid-19</span> Map Data
+              </p>
+              <br />
+              <div class="tech-used">
+                <p>JavaScript</p>
+                <p>D3.js</p>
+                <p>Jquery</p>
+                <p>HTML</p>
+                <p>SCSS</p>
+              </div>
+              <br />
+              <p>
+                A Covid-19 dashboard. Displays maps of Covid-19 data, including
+                cases per capita, daily increase, weekly increase, and death
+                rate. Also includes state guidelines and travel restrictions.
+              </p>
+              <div class="project-sources">
+                <div class="project-btn code-source-btn">
+                  <a
+                    href="https://github.com/RyanASC20/covidrestrictions"
+                    target="_blank"
+                    ><span class="fas fa-code"></span>Code</a
+                  >
+                </div>
+                <div class="project-btn code-demo-btn">
+                  <a href="https://www.covidmapdata.com" target="_blank"
+                    >Demo</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="all-projects content">
-                <div class="project-card">
-                    <img src="assets/imgs/covidmapdata.PNG">
-                    <div class="project-text">
-                        <p class="project-head"><span class="heading-first-word">Covid-19</span> Map Data</p>
-                        <br>
-                        <div class="tech-used">
-                            <p>JavaScript</p>
-                            <p>D3.js</p>
-                            <p>Jquery</p>
-                            <p>HTML</p>
-                            <p>SCSS</p>
-                        </div>
-                        <br>
-                        <p>A Covid-19 dashboard. Displays maps of Covid-19 data, including cases per capita, daily increase, weekly increase, and death rate. Also includes state guidelines and travel restrictions.
-                        </p>
-                        <div class="project-sources">
-                            <div class="project-btn code-source-btn">
-                                <a href="https://github.com/RyanASC20/covidrestrictions" target="_blank"><span class="fas fa-code"></span>Code</a>
-                            </div>
-                            <div class="project-btn code-demo-btn">
-                                <a href="https://www.covidmapdata.com" target="_blank">Demo</a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/imgs/cyclepricer.PNG" />
+            <div class="project-text">
+              <p class="project-head">
+                <span class="heading-first-word">Resale</span> Value Calculator
+              </p>
+              <br />
+              <div class="tech-used">
+                <p>Next.js</p>
+                <p>SCSS</p>
+              </div>
+              <br />
+              <p>
+                Calculates data on pricing of Ebay listings pulled using Ebay's
+                findItemsByKeyword API. Calculates the mean, median, max, min,
+                and target price for items of varying usage-conditions. Target
+                price is a safe price at which users can sell their products.
+              </p>
+              <div class="project-sources">
+                <div class="project-btn code-source-btn">
+                  <a
+                    href="https://github.com/RyanASC20/resalecalculator"
+                    target="_blank"
+                    ><span class="fas fa-code"></span>Code</a
+                  >
                 </div>
-                <div class="project-card card-right">
-                    <img src="assets/imgs/cyclepricer.PNG">
-                    <div class="project-text">
-                        <p class="project-head"><span class="heading-first-word">Resale</span> Value Calculator</p>
-                        <br>
-                        <div class="tech-used">
-                            <p>Next.js</p>
-                            <p>SCSS</p>
-                        </div>
-                        <br>
-                        <p>Calculates data on pricing of Ebay listings pulled using Ebay's findItemsByKeyword API. Calculates the mean, median, max, min, and target price for items of varying usage-conditions. Target price is a safe price at which users can sell their products.
-                        </p>
-                        <div class="project-sources">
-                            <div class="project-btn code-source-btn">
-                                <a href="https://github.com/RyanASC20/resalecalculator" target="_blank"><span class="fas fa-code"></span>Code</a>
-                            </div>
-                            <div class="project-btn code-demo-btn">
-                                <a href="https://cyclepricer.com" target="_blank">Demo</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-btn code-demo-btn">
+                  <a href="https://cyclepricer.com" target="_blank">Demo</a>
                 </div>
-                <div class="project-card">
-                    <img src="assets/imgs/ari-Exchange.png">
-                    <div class="project-text">
-                        <p class="project-head"><span class="heading-first-word">ARI</span>-Exchange</p>
-                        <br>
-                        <div class="tech-used">
-                            <p>JavaScript</p>
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>Firebase</p>
-                        </div>
-                        <br>
-                        <p>My All Star Code Demo Day project that I worked on with Advaith Hari and Ibrahim Kabia. It is
-                            an ecommerce site with the buyer's interests in mind rather than sellers. Instead of following the traditional model where sellers post their items, ARI-Exchange allows buyers to post requests for items they are looking for at a desired price. Sellers can then propose offers in each request's comment section.</p>
-                        <div class="project-sources">
-                            <div class="project-btn code-source-btn">
-                                <a href="https://github.com/RyanASC20/Exchange-Ari" target="_blank"><span
-                                        class="fas fa-code"></span>Code</a>
-                            </div>
-                            <div class="project-btn code-demo-btn">
-                                <a href="https://ryanasc20.github.io/Exchange-Ari/" target="_blank">Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card card-right">
-                    <img src="assets/imgs/raycasting.PNG">
-                    <div class="project-text">
-                        <p class="project-head"><span class="heading-first-word">Raycasting</span> in p5🌞</p>
-                        <br>
-                        <div class="tech-used">
-                            <p>p5.js</p>
-                            <p>HTML</p>
-                        </div>
-                        <br>
-                        <p>Inspired by The Coding Train. Project uses the p5 library in Javascript to visualize raycasting and shadowing.</p>
-                        <div class="project-sources">
-                            <div class="project-btn code-source-btn">
-                                <a href="https://www.github.com/ryanasc20/raycasting" target="_blank"><span class="fas fa-code"></span>Code</a>
-                            </div>
-                            <div class="project-btn code-demo-btn">
-                                <a href="https://ryanasc20.github.io/raycasting/" target="_blank">Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="assets/imgs/surreal.PNG">
-                    <div class="project-text">
-                        <p class="project-head"><span class="heading-first-word">Surreal</span>: A Quick Source for
-                            Toilet Paper Prices🧻🧻</p>
-                        <br>
-                        <div class="tech-used">
-                            <p>Python</p>
-                            <p>BeautifulSoup4</p>
-                            <p>Requests</p>
-                            <p>CGI</p>
-                            <p>HTML</p>
-                            <p>CSS</p>
-                        </div>
-                        <br>
-                        <p>Python-powered website that uses BeautifulSoup to scrape and display toilet paper pricing data from stores, including Walmart, BJ's, and CVS during COVID-19.  Users can sort through products by price, name, and availability. Users can also create their own accounts that store their cart's items.
-                        </p>
-                        <div class="project-sources">
-                            <div class="project-btn code-source-btn">
-                                <a href="https://github.com/RyanASC20/Surreal" target="_blank"><span class="fas fa-code"></span>Code</a>
-                            </div>
-                            <div class="project-btn code-demo-btn">
-                                <a href="http://moe.stuy.edu/~rpoon20/www/surreal/home.py" target="_blank">Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="project-card">
+            <img src="assets/imgs/ari-Exchange.png" />
+            <div class="project-text">
+              <p class="project-head">
+                <span class="heading-first-word">ARI</span>-Exchange
+              </p>
+              <br />
+              <div class="tech-used">
+                <p>JavaScript</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Firebase</p>
+              </div>
+              <br />
+              <p>
+                My All Star Code Demo Day project that I worked on with Advaith
+                Hari and Ibrahim Kabia. It is an ecommerce site with the buyer's
+                interests in mind rather than sellers. Instead of following the
+                traditional model where sellers post their items, ARI-Exchange
+                allows buyers to post requests for items they are looking for at
+                a desired price. Sellers can then propose offers in each
+                request's comment section.
+              </p>
+              <div class="project-sources">
+                <div class="project-btn code-source-btn">
+                  <a
+                    href="https://github.com/RyanASC20/Exchange-Ari"
+                    target="_blank"
+                    ><span class="fas fa-code"></span>Code</a
+                  >
+                </div>
+                <div class="project-btn code-demo-btn">
+                  <a
+                    href="https://ryanasc20.github.io/Exchange-Ari/"
+                    target="_blank"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/imgs/ascii-art.PNG" />
+            <div class="project-text">
+              <p class="project-head">
+                <span class="heading-first-word">Ascii</span>-Art
+              </p>
+              <br />
+              <div class="tech-used">
+                <p>Java</p>
+              </div>
+              <br />
+              <p>
+                Converts images to Ascii using Princeton's picture library.
+              </p>
+              <div class="project-sources">
+                <div class="project-btn code-source-btn">
+                  <a href="https://github.com/RyanASC20/ascii-art" target="_blank"
+                    ><span class="fas fa-code"></span>Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/imgs/raycasting.PNG" />
+            <div class="project-text">
+              <p class="project-head">
+                <span class="heading-first-word">Raycasting</span> in p5🌞
+              </p>
+              <br />
+              <div class="tech-used">
+                <p>p5.js</p>
+                <p>HTML</p>
+              </div>
+              <br />
+              <p>
+                Inspired by The Coding Train. Project uses the p5 library in
+                Javascript to visualize raycasting and shadowing.
+              </p>
+              <div class="project-sources">
+                <div class="project-btn code-source-btn">
+                  <a
+                    href="https://www.github.com/ryanasc20/raycasting"
+                    target="_blank"
+                    ><span class="fas fa-code"></span>Code</a
+                  >
+                </div>
+                <div class="project-btn code-demo-btn">
+                  <a
+                    href="https://ryanasc20.github.io/raycasting/"
+                    target="_blank"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/imgs/surreal.PNG" />
+            <div class="project-text">
+              <p class="project-head">
+                <span class="heading-first-word">Surreal</span>: A Quick Source
+                for Toilet Paper Prices🧻🧻
+              </p>
+              <br />
+              <div class="tech-used">
+                <p>Python</p>
+                <p>BeautifulSoup4</p>
+                <p>Requests</p>
+                <p>CGI</p>
+                <p>HTML</p>
+                <p>CSS</p>
+              </div>
+              <br />
+              <p>
+                Python-powered website that uses BeautifulSoup to scrape and
+                display toilet paper pricing data from stores, including
+                Walmart, BJ's, and CVS during COVID-19. Users can sort through
+                products by price, name, and availability. Users can also create
+                their own accounts that store their cart's items.
+              </p>
+              <div class="project-sources">
+                <div class="project-btn code-source-btn">
+                  <a href="https://github.com/RyanASC20/Surreal" target="_blank"
+                    ><span class="fas fa-code"></span>Code</a
+                  >
+                </div>
+                <div class="project-btn code-demo-btn">
+                  <a
+                    href="http://moe.stuy.edu/~rpoon20/www/surreal/home.py"
+                    target="_blank"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
+
+
