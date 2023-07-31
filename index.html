@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     />
     <!-- Style -->
-    <link rel="stylesheet" href="src/css/style.min.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
     <!-- Animation -->
     <link
       rel="stylesheet"
@@ -40,7 +40,7 @@
     ></script>
     <!-- JS -->
     <script type="module" src="src/js/script.min.js" defer></script>
-    <script src="src/js/sketch.min.js" defer></script>
+    <script src="src/js/sketch.js" defer></script>
     <title>Ryan Poon | Developer Portfolio</title>
   </head>
   <body>
@@ -48,16 +48,13 @@
       <div id="canvas"></div>
       <section id="title">
         <p id="name" class="heading"></p>
-        <p id="position">Developer and Student🚀</p>
         <div id="about">
-          Welcome to my portfolio!<br /><br />
-          I am currently a rising Junior at Stuyvesant High School. I am an
-          aspiring full-stack developer with experience in HTML, CSS,
-          JavaScript, and Python.
+          <!-- <h5>Welcome to my website!</h5> -->
+          I am currently an undergraduate student studying Mathematics and Computer Science at Northwestern University. 
         </div>
       </section>
       <div class="social">
-        <a href="https://github.com/RyanASC20" target="_blank"
+        <a href="https://github.com/ryanp8" target="_blank"
           ><i class="fab fa-github"></i
         ></a>
         <a
@@ -65,11 +62,7 @@
           target="_blank"
           ><i class="fab fa-linkedin-in"></i
         ></a>
-        <a href="https://www.facebook.com/ryan.poon.9400/" target="_blank"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="mailto:rypoon18@gmail.com"><i class="fas fa-envelope"></i></a>
-        <i class="fas fa-file-alt" id="resume-modal-btn"></i>
+        <a href="mailto:ryanpoon18@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
       <div id="project-arrow-container">
         <a href="#projects"
@@ -78,15 +71,7 @@
           ></i
         ></a>
       </div>
-      <div class="modal modal-mask" id="resume-modal">
-        <iframe
-          id="resume"
-          src="https://docs.google.com/document/d/e/2PACX-1vTWRv4drqSJ9ctIrRZQ7x5PQykcpD5jLzV5hzVwSfTzsnLySCO7Rj2Ygbiv0pGsINVxyfObbNGQm0hT/pub?embedded=true"
-        >
-        </iframe>
-        <i class="fas fa-times" id="modal-close"></i>
-      </div>
-      <section id="skills">
+      <!-- <section id="skills">
         <div class="heading-container">
           <p id="projects-heading" class="heading section-heading">
             <span class="heading-first-word">My</span> Skills
@@ -115,7 +100,7 @@
             </tr>
           </table>
         </div>
-      </section>
+      </section> -->
       <section id="projects">
         <div class="heading-container">
           <p id="projects-heading" class="heading section-heading">
@@ -124,204 +109,119 @@
         </div>
         <div class="all-projects content">
           <div class="project-card">
-            <img src="assets/imgs/covidmapdata.PNG" />
+            <!-- <img src="assets/imgs/covidmapdata.PNG" /> -->
             <div class="project-text">
               <p class="project-head">
-                <span class="heading-first-word">Covid-19</span> Map Data
-              </p>
-              <br />
-              <div class="tech-used">
-                <p>JavaScript</p>
-                <p>D3.js</p>
-                <p>Jquery</p>
-                <p>HTML</p>
-                <p>SCSS</p>
-              </div>
-              <br />
-              <p>
-                A Covid-19 dashboard. Displays maps of Covid-19 data, including
-                cases per capita, daily increase, weekly increase, and death
-                rate. Also includes state guidelines and travel restrictions.
-              </p>
-              <div class="project-sources">
-                <div class="project-btn code-source-btn">
-                  <a
-                    href="https://github.com/RyanASC20/covidrestrictions"
-                    target="_blank"
-                    ><span class="fas fa-code"></span>Code</a
-                  >
-                </div>
-                <div class="project-btn code-demo-btn">
-                  <a href="https://www.covidmapdata.com" target="_blank"
-                    >Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/imgs/cyclepricer.PNG" />
-            <div class="project-text">
-              <p class="project-head">
-                <span class="heading-first-word">Resale</span> Value Calculator
-              </p>
-              <br />
-              <div class="tech-used">
-                <p>Next.js</p>
-                <p>SCSS</p>
-              </div>
-              <br />
-              <p>
-                Calculates data on pricing of Ebay listings pulled using Ebay's
-                findItemsByKeyword API. Calculates the mean, median, max, min,
-                and target price for items of varying usage-conditions. Target
-                price is a safe price at which users can sell their products.
-              </p>
-              <div class="project-sources">
-                <div class="project-btn code-source-btn">
-                  <a
-                    href="https://github.com/RyanASC20/resalecalculator"
-                    target="_blank"
-                    ><span class="fas fa-code"></span>Code</a
-                  >
-                </div>
-                <div class="project-btn code-demo-btn">
-                  <a href="https://cyclepricer.com" target="_blank">Demo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/imgs/ari-Exchange.png" />
-            <div class="project-text">
-              <p class="project-head">
-                <span class="heading-first-word">ARI</span>-Exchange
-              </p>
-              <br />
-              <div class="tech-used">
-                <p>JavaScript</p>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>Firebase</p>
-              </div>
-              <br />
-              <p>
-                My All Star Code Demo Day project that I worked on with Advaith
-                Hari and Ibrahim Kabia. It is an ecommerce site with the buyer's
-                interests in mind rather than sellers. Instead of following the
-                traditional model where sellers post their items, ARI-Exchange
-                allows buyers to post requests for items they are looking for at
-                a desired price. Sellers can then propose offers in each
-                request's comment section.
-              </p>
-              <div class="project-sources">
-                <div class="project-btn code-source-btn">
-                  <a
-                    href="https://github.com/RyanASC20/Exchange-Ari"
-                    target="_blank"
-                    ><span class="fas fa-code"></span>Code</a
-                  >
-                </div>
-                <div class="project-btn code-demo-btn">
-                  <a
-                    href="https://ryanasc20.github.io/Exchange-Ari/"
-                    target="_blank"
-                    >Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/imgs/ascii-art.PNG" />
-            <div class="project-text">
-              <p class="project-head">
-                <span class="heading-first-word">Ascii</span>-Art
-              </p>
-              <br />
-              <div class="tech-used">
-                <p>Java</p>
-              </div>
-              <br />
-              <p>
-                Converts images to Ascii using Princeton's picture library.
-              </p>
-              <div class="project-sources">
-                <div class="project-btn code-source-btn">
-                  <a href="https://github.com/RyanASC20/ascii-art" target="_blank"
-                    ><span class="fas fa-code"></span>Code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/imgs/raycasting.PNG" />
-            <div class="project-text">
-              <p class="project-head">
-                <span class="heading-first-word">Raycasting</span> in p5🌞
-              </p>
-              <br />
-              <div class="tech-used">
-                <p>p5.js</p>
-                <p>HTML</p>
-              </div>
-              <br />
-              <p>
-                Inspired by The Coding Train. Project uses the p5 library in
-                Javascript to visualize raycasting and shadowing.
-              </p>
-              <div class="project-sources">
-                <div class="project-btn code-source-btn">
-                  <a
-                    href="https://www.github.com/ryanasc20/raycasting"
-                    target="_blank"
-                    ><span class="fas fa-code"></span>Code</a
-                  >
-                </div>
-                <div class="project-btn code-demo-btn">
-                  <a
-                    href="https://ryanasc20.github.io/raycasting/"
-                    target="_blank"
-                    >Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="assets/imgs/surreal.PNG" />
-            <div class="project-text">
-              <p class="project-head">
-                <span class="heading-first-word">Surreal</span>: A Quick Source
-                for Toilet Paper Prices🧻🧻
+                130/30 Long-Short Equity Trading Strategy
               </p>
               <br />
               <div class="tech-used">
                 <p>Python</p>
-                <p>BeautifulSoup4</p>
-                <p>Requests</p>
-                <p>CGI</p>
-                <p>HTML</p>
-                <p>CSS</p>
+                <p>Multiprocessing</p>
+                <p>NumPy</p>
+                <p>Yahoo Finance</p>
               </div>
               <br />
               <p>
-                Python-powered website that uses BeautifulSoup to scrape and
-                display toilet paper pricing data from stores, including
-                Walmart, BJ's, and CVS during COVID-19. Users can sort through
-                products by price, name, and availability. Users can also create
-                their own accounts that store their cart's items.
+                Implemented a 130/30 long-short equity strategy using mean reversion for stocks in the S&P 500.
+                Used multiprocessing to backtest on multiple datasets from Yahoo Finance in parallel and improve testing speed by 3.7x. 
+                This testing showed that, on average, the strategy preformed 2.33% better than the S&P 500.
               </p>
               <div class="project-sources">
                 <div class="project-btn code-source-btn">
-                  <a href="https://github.com/RyanASC20/Surreal" target="_blank"
-                    ><span class="fas fa-code"></span>Code</a
+                  <a
+                    href="https://github.com/ryanp8/trading-bot"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <!-- <img src="assets/imgs/cyclepricer.PNG" /> -->
+            <div class="project-text">
+              <p class="project-head">
+                ASCII Art Converter
+              </p>
+              <br />
+              <div class="tech-used">
+                <p>Next.js</p>
+                <p>Prisma</p>
+                <p>PlanetScale</p>
+                <p>Tailwind CSS</p>
+              </div>
+              <br />
+              <p>
+                A full-stack website that allows users to upload images and converts them to ASCII art.
+                Created a gallery with pagination that allows users to view ASCII representations of images uploaded by others.
+              </p>
+              <div class="project-sources">
+                <div class="project-btn code-source-btn">
+                  <a
+                    href="https://github.com/ryanp8/ascii-art-converter"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+                <div class="project-btn code-demo-btn">
+                  <a href="https://ascii-art-converter-eight.vercel.app" target="_blank">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <!-- <img src="assets/imgs/ascii-art.PNG" /> -->
+            <div class="project-text">
+              <p class="project-head">
+                Barnes-Hut Gravity Simulation
+              </p>
+              <br />
+              <div class="tech-used">
+                <p>Python</p>
+                <p>Pygame</p>
+                <p>Quadtree</p>
+              </div>
+              <br />
+              <p>
+                Simulated orbiting objects using the Barnes-Hut algorithm and visualized objects using Pygame.
+              </p>
+              <div class="project-sources">
+                <div class="project-btn code-source-btn">
+                  <a href="https://github.com/ryanp8/barnes-hut-gravity" target="_blank"
+                    >Code</a
                   >
                 </div>
                 <div class="project-btn code-demo-btn">
                   <a
-                    href="http://moe.stuy.edu/~rpoon20/www/surreal/home.py"
+                    href="https://photos.google.com/share/AF1QipNf1drlJZ4tTzrnA8P0F204Ugie6QvKCqundBOcOTG0MOC2fIAGzhr8h9uIloehbQ?key=RDRwb3pUeGxPWllkYkZyZnQweTZ2S2ZhblhhdUFB"
+                    target="_blank"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <!-- <img src="assets/imgs/raycasting.PNG" /> -->
+            <div class="project-text">
+              <p class="project-head">
+                Raycaster
+              </p>
+              <br />
+              <div class="tech-used">
+                <p>C++</p>
+                <p>ge211</p>
+              </div>
+              <br />
+              <p>
+                Created a game where a player must escape a maze by visiting checkpoints. Implemented a raycaster to render a game in 3D based on a 2D map using Northwestern’s ge211 game engine.
+                Handled game state and player movement to allow the player walk around the map.
+              </p>
+              <div class="project-sources">
+                <div class="project-btn code-demo-btn">
+                  <a
+                    href="https://photos.google.com/share/AF1QipPh3Vn-1TGkLgTOv_igroyhApH-bI1lLe-7nknRbs7z3E17-loboaxuW_0f3pSjXw?key=TER1bGlzMGhXODhFeGZUTlZiNC1YVnhIODRrMFRR"
                     target="_blank"
                     >Demo</a
                   >

@@ -7,7 +7,7 @@ let displayMessage = (message, domLocation) => {
             domLocation.text(domLocation.text().replace('_', ''));
             clearInterval(addLetter)
         }
-    }, 120);
+    }, 100);
 }
 
 export default displayMessage;

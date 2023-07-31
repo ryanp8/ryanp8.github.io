@@ -112,6 +112,5 @@ function draw() {
     staticStars.forEach(star => {
         star.show();
     });
-    
     drawMountains();
 }
